@@ -1,0 +1,43 @@
+
+[
+  {
+    "document_type": "invoice",
+    "text": "Invoice Number: INV-201\nCustomer: Hira Ahmed\nTotal Amount: Rs. 4500",
+    "expected": {
+      "invoice_number": "INV-201",
+      "customer_name": "Hira Ahmed",
+      "total_amount": 4500.0
+    }
+  },
+  {
+    "document_type": "invoice",
+    "text": "BILL NO: BILL-305\nBilled to: Omar Khan\nAmount Due: Rs. 7250.50",
+    "expected": {
+      "invoice_number": "BILL-305",
+      "customer_name": "Omar Khan",
+      "total_amount": 7250.5
+    }
+  },
+  {
+    "document_type": "resume",
+    "text": "Name: Sana Ali\nEmail: sana@example.com\nPhone: 03001234567\nSkills: Python, SQL\nExperience: 2 years",
+    "expected": {
+      "full_name": "Sana Ali",
+      "email": "sana@example.com",
+      "phone": "03001234567",
+      "skills": ["Python", "SQL"],
+      "years_of_experience": 2.0
+    }
+  },
+  {
+    "document_type": "resume",
+    "text": "Candidate: Bilal Ahmed\nEmail: bilal@example.com\nTechnical Skills: Java, Git, MySQL\nProfessional Experience: 3 years",
+    "expected": {
+      "full_name": "Bilal Ahmed",
+      "email": "bilal@example.com",
+      "phone": "",
+      "skills": ["Java", "Git", "MySQL"],
+      "years_of_experience": 3.0
+    }
+  }
+]
